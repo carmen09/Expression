@@ -1,9 +1,6 @@
-/* body{
-    background-color:#BA55D3;
-}
 @font-face{
-    font-family:"Barlow-Medium" ;
-    src: url("./asserts/fonts/woff2/Barlow-Medium.woff2") format("woff2");
+    font-family:"Barlow-Light" ;
+    src: url("./asserts/fonts/woff2/Barlow-Light.woff2") format("woff2");
     
     }
     
@@ -13,35 +10,3 @@
         
         }
     
-    h1{
-        font-family:'Merienda';
-        text-align: center;
-        font-size: 10em;
-        color: aqua;
-        ;
-    }
-    
-    
-    h2{
-        font-family:"Barlow-Medium";
-    }
-    
-    .paragraph{
-        font-size: 5vw;
-        transform: rotate(25deg);
-    
-    
-    }
-    .red{
-        color: red;
-        text-decoration: underline;
-        font-size: 7vw;
-    }
-    
-    .invisible:hover{
-        font-size: 10vw;
-    
-    
-    
-    }
-     */
