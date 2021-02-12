@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expression</title>
+    <meta name="description" content="Your description goes here">
+    <meta name="author" content="Your Name">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Kranky&family=Merienda&family=Open+Sans+Condensed:wght@300&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <!-- Link to your favicon -->
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:#CD5C5C;
+        width: 100%;
+    }
+    .menu a{
+        font-size: 18px;
+        padding: 15px 0;
+        color:#333;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .section{
+        display: inline-block;
+        width:100%;
+        height: 100vh;
+    }
+   .content .section:nth-child(1){
+       background-color: darksalmon;
+   }
+   .content .section:nth-child(2){
+       background-color: #00CED1;;
+   }
+   .content .section:nth-child(3){
+       background-color:#9400D3;
+   }
+   .content .section:nth-child(4){
+       background-color:pink;
+   }
+   .content .section:nth-child(5){
+       background-color:#9ACD32;
+   }
+   .red{
+    color: red;
+    text-decoration: underline;
+    font-size: 5vw;
+}
+.big{
+    color: red;
+    font-size:7vw;
+}
+   section h1{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       font-size: 15em;
+       color: slateblue;
+       font-family: "Merienda";
+   }
+   section h2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       font-size: 3em;
+       color:#FF1493;
+       font-family: "Open Sans Condensed";
+   }
+   section h3{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       font-size: 3em;
+       color:black;
+       font-family: "Rajdhani";
+   }
+   section h4{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       font-size: 7em;
+       color: slateblue;
+       font-family: "Kranky";
+   }
+   section h5{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       font-size: 3em;
+       color: #FF4500;
+       font-family: "Amita";
+   }
+        </style>
+
+</head>
+
+
+<body>
+    <nav class="menu">
+        <a href="#US">US</a>
+        <a href="#WE">I should know</a>
+        <a href="#SHE">WE</a>
+        <a href="#HE">Hummm</a>
+        <a href="#I">I can take the pain</a>
+
+    </nav>
+    <div class="content">
+        <section id="US" class="section"><h1>That's US</h1></section>
+        <section id="WE" class="section"><h2>I shoulda known it wouldn't happen 'cause it wasn't right
+            I shoulda known it 'cause it happens every God damn time
+            Almost thought we could've been something
+            Almost thought we could have tried, but
+            It didn't happen so I need you to get out my life
+            But the other night I had you in my head
+            Called you on the phone
+            Want you stealing my time even though I said I wanna be alone
+            Oh and I should know this could never work
+            Oh, this could never end well
+            Know it's only human but I never learn
+            I want you for myself
+            I can take the fall, the pain, the pleasure
+            And you can take it all, for worse, or better
+            But oh, what if we're wrong?
+            What if we're not all that we thought?
+            Then we won't make it along
+            But hey, <span class="red">I guess that's us</span></h2></h2></section>
+        <section id="SHE" class="section"><h3>We couldn't help it but you know that doesn't make it right
+You say I'm selfish but I know you felt the same inside
+Everybody says it's all okay
+Everybody says we're fine, but
+Guess someone else is what you need to make you feel alright
+But tomorrow night I'll probably call a cab
+Show up at your door
+Love you in the night time, leave you in your bed
+Cold and wanting more
+Oh and I should know this could never work
+Oh, this could never end well
+Know it's only human, but I never learn, I need you for myself</h3></section>
+        <section id="HE" class="section"><h4>Hmmm<br>
+            Hmmm<br>
+            Hmmm<br>
+            Hmmm</h4></section>
+        <section id="I"class="section"><h5>I can take the fall, the pain, the pleasure<br>
+            And you can take it all, for worse, or better<br>
+            But oh, what if we're wrong?<br>
+            What if we're not all that we thought?<br>
+            Then we won't make it along<br>
+            But hey, I guess <span class="big">that's love</span></h5></section>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1min.js"></script>   
+   <script type="text/javascript">
+    
+   
+    $(function(){
+        $(".menu. a").on('click', function(){
+            $("html,body").animate({
+                scrollTop:$($.attr(this,'href')).offset().top
+            },100);
+        });
+    });
+    </script>
+</body>
+
+</html>
